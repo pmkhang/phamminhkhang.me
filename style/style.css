@@ -1,0 +1,407 @@
+:root {
+	--my-color: #261935;
+}
+html{
+	font-size: 100%;
+}
+* {
+	margin: 0;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+#myHeader:hover {
+	background-color: var(--my-color);
+}
+#myHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: transparent;
+	transition: background-color 0.4s ease-in-out;
+}
+#myHeader.white {
+	background-color: var(--my-color);
+}
+.header {
+	width: 100%;
+	position: fixed;
+}
+.navbar {
+	padding-top: 20px;
+	width: 100%;
+	height: 60px;
+}
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 980px;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+.navbar-logo a {
+	margin-left: 20px;
+	text-decoration: none;
+}
+.navbar-logo a img {
+	margin-top: -40px;
+	height: 60px;
+}
+.navbar-menu ul {
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+	margin-right: 30px;
+}
+.navbar-menu li {
+	list-style: none;
+	margin: 20px;
+	padding-bottom: 2px;
+}
+.navbar-menu li a {
+	font-size: 20px;
+	text-decoration: none;
+	padding-bottom: 5px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	/* đổ bóng text với độ mờ là 0.5 */
+}
+.navbar-toggle {
+	display: none;
+	transform: scale(1.5);
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+.toggle-icon {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #fff;
+	margin: 4px 0;
+	box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+.container-content {
+	padding-top: 20px;
+	color: black;
+	background-color: white;
+	text-align: center;
+}
+li a {
+	text-decoration: none;
+	/* ẩn gạch chân mặc định */
+	padding: 5px;
+	margin-left: -18px;
+	/* tạo khoảng cách giữa nội dung và gạch chân */
+	/* border-bottom: 1px dashed black;
+	*/
+}
+li a:hover{
+	color: white;
+	border-bottom: 2px solid white;
+}
+a {
+	color: white;
+}
+#myBanner {
+	position: relative;
+	width: 100%;
+	height: 1055px;
+	/* Điều chỉnh chiều cao cho phù hợp */
+	/* overflow: hidden; */
+}
+#myBanner img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* Không bị crop ảnh */
+	object-position: center center;
+	/* Căn giữa ảnh */
+}
+.banner {
+	position: absolute;
+	overflow: hidden;
+	position: relative;
+}
+.slide {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s ease-in-out;
+}
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.noidung {
+	position: relative;
+	height: 27%;
+	font-size: 35px;
+	color: rgb(255, 255, 255);
+	bottom: -35%;
+	text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+	/* đổ bóng text với độ mờ là 0.5 */
+	text-align: center;
+	/* top: 30%;
+	left: 20%; */
+}
+.nameBox{
+	padding-top: 50px;
+}
+.banner div img {
+	width: 40%;
+	height: auto;
+}
+.nav-close {
+	display: none;
+}
+.timme {
+	padding-top: 100px;
+	font-size: 40px;
+}
+#ve-toi,#hoc-van,#san-pham,#kinh-nghiem,#lien-he {
+	/* color: white; */
+	margin-top: -20px;
+	padding-top: 150px;
+	padding-bottom: 315px;
+	border-bottom: 3.5px solid var(--my-color);
+}
+section h1 {
+	margin-top: -45px;
+	font-size: 40px;
+}
+#multiText {
+	padding-top: 70px;
+}
+@media screen and (max-width: 850px) {
+	.navbar-menu li a {
+		font-size: 17px;
+	}
+	.navbar-logo a img {
+		height: 45px;
+	}
+	.noidung {
+		padding-top: 10px;
+	}
+	#myBanner {
+		height: 600px;
+	}
+}
+	
+@media screen and (max-width: 768px) {
+	.navbar {
+		padding-top: 0;
+		height: 50px;
+	}
+	.navbar-logo a img {
+		margin-top: -5px;
+		padding-left: 30px;
+		height: 40px;
+	}
+	.navbar-container {
+		margin-top: 15px;
+	}
+	.navbar-menu {
+		position: fixed;
+		top: 145px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow-y: auto;
+		background-color: var(--my-color);
+		transform: translateX(-100%);
+		transition: all 0.3s ease;
+	}
+	.navbar-menu.active {
+		transform: translateX(0);
+	}
+	.navbar-toggle {
+		margin-top: -5px;
+		margin-right: 40px;
+		display: block;
+		font-size: 24px;
+		cursor: pointer;
+	}
+	.navbar-menu ul {
+		display: contents;
+		margin: 80px 0;
+		padding: 0;
+		width: 30%;
+		height: 100px;
+	}
+	.navbar-menu li {
+		padding-top: 30px;
+		margin: 20px;
+	}
+	.navbar-menu li a {
+		font-size: 15px;
+	}
+	li a {
+		padding: 0;
+		padding-left: 30px;
+		color: white;
+	}
+	.nav-close {
+		position: absolute;
+		display: flex;
+		top: 110px;
+		right: 48px;
+		padding: 80px 0;
+		cursor: pointer;
+		z-index: 1000;
+	}
+	.nav-close i {
+		font-size: 40px;
+		color: #fff;
+	}
+	.nav-close.active {
+		transform: translateX(1);
+	}
+	#ve-toi,#hoc-van,#san-pham,#kinh-nghiem,#lien-he {
+		padding-top: 70px;
+	}
+	.noidung {
+		bottom: -15%;
+		font-size: 30px
+	}
+	#myBanner {
+		height: 600px;
+	}
+	section h1 {
+		margin-top: 16px;
+		padding-top: 13px;
+		font-size: 1.9rem;
+	}
+	section h3 {
+		font-size: 20px;
+	}
+	.nameBox {
+		padding-top: 0px;
+	}
+}
+#scroll-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-color: var(--my-color);
+	border-radius: 20px;
+	border-color: #fff;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s, visibility 0.4s;
+}
+#scroll-to-top.show {
+	opacity: 1;
+	visibility: visible;
+}
+#scroll-to-top:hover {
+	color: #261935;
+	background-color: white;
+}
+
+.footer-page {
+	text-align: center;
+	background-color: #261935;
+	color: #fff;
+	width: 100%;
+	height: 500px;
+	font-size: 20px;
+}
+.timme {
+	font-size: 25px;
+}
+
+/* Định dạng form */
+.contact-form {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 60px;
+	
+}
+
+form {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: left;
+	padding-top: 20px;
+	box-shadow: 3px 5px 20px 1px #bebdbd;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Định dạng input và label */
+.input-group {
+	margin: 10px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+input,
+textarea {
+	border-radius: 7px;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	margin: 5px 0;
+	box-shadow: 1px 3px 5px 0px #bebdbd;
+}
+
+/* Định dạng button */
+button[type=submit] {
+	background-color: #482a6b;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-top: 10px;
+	box-shadow: 1px 3px 5px 0px #bebdbd;
+	font-size: 18px;
+}
+button[type=submit]:hover {
+	background-color: #623794;
+	transition: 0.4s;
+}
+/* Thêm responsive cho mobile */
+@media only screen and (max-width: 600px) {
+	.container {
+		max-width: 400px;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
+
+	button[type=submit] {
+		width: 100%;
+	}
+}
+.alert-messagee{
+	font-size: 20px;
+	padding-top: 30px;
+	color: rgb(1, 65, 1);
+	border: none;
+}
