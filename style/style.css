@@ -108,6 +108,8 @@ a {
 }
 .menu a:focus {
 	color: white;
+	border-radius: 7px;
+	border-bottom: 2.5px solid white;
 }
 #myBanner {
 	position: relative;
