@@ -299,9 +299,8 @@ section h1 {
 	width: 40px;
 	height: 40px;
 	background-color: var(--my-color);
-	border-radius: 20px;
-	border-color: #fff;
-	color: rgb(255, 255, 255);
+	border-radius: 50%;
+	border: 2.5px solid var(--my-color);
 	font-size: 20px;
 	cursor: pointer;
 	opacity: 0;
@@ -312,9 +311,12 @@ section h1 {
 	opacity: 1;
 	visibility: visible;
 }
-#scroll-to-top:hover {
-	color: #261935;
-	background-color: white;
+.fas {
+	padding-top: 7px;
+	color: white;
+}
+#scroll-to-top:hover{
+	border: 2.5px solid white;
 }
 
 .footer-page {
