@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body >
    <div class="header" id="myHeader"> 
     <nav class="navbar">
         <div class="navbar-container">
@@ -25,17 +25,14 @@
             <span class="toggle-icon"></span>
             
           </div>
-          <div class="navbar-menu" id="myBgMenu">
+          <div class="navbar-menu " id="myBgMenu">
             <ul class="menu">
-              <li><a class="menu-white" href="#ve-toi">VỀ TÔI</a></li>
-              <li><a class="menu-white" href="#hoc-van">HỌC VẤN</a></li>
-              <li><a class="menu-white" href="#kinh-nghiem">KINH NGHIỆM</a></li>
-              <li><a class="menu-white" href="#san-pham">SẢN PHẨM</a></li>
-              <li><a class="menu-white" href="#lien-he">LIÊN HỆ</a></li>
+              <li class="close-menu"><a class="menu-white" href="#ve-toi">VỀ TÔI</a></li>
+              <li class="close-menu"><a class="menu-white" href="#hoc-van">HỌC VẤN</a></li>
+              <li class="close-menu"><a class="menu-white" href="#kinh-nghiem">KINH NGHIỆM</a></li>
+              <li class="close-menu"><a class="menu-white" href="#san-pham">SẢN PHẨM</a></li>
+              <li class="close-menu"><a class="menu-white" href="#lien-he">LIÊN HỆ</a></li>
             </ul>
-            <div class="nav-close">
-              <i class="fas fa-times"></i>
-            </div>
           </div>
         </div>
       </nav>
@@ -174,11 +171,11 @@
             </div>
             <div class="input-group">
               <label for="phone">Số điện thoại:</label>  
-              <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+              <input type="tel" id="phone" name="phone" required>
             </div>
             <div class="input-group">
-              <label for="subject">Chủ đề:</label>
-              <input type="text" id="subject" name="subject" required>
+              <label for="phone">Chủ đề:</label>  
+              <input type="tel" id="title" name="title" required>
             </div>
             <div class="input-group">
               <label for="message">Nội dung:</label>
