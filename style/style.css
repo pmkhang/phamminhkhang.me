@@ -100,9 +100,13 @@ li a {
 }
 li a:hover{
 	color: white;
-	border-bottom: 2px solid white;
+	border-radius: 7px;
+	border-bottom: 2.5px solid white;
 }
 a {
+	color: white;
+}
+.menu a:focus {
 	color: white;
 }
 #myBanner {
