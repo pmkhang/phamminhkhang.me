@@ -19,24 +19,27 @@ scrollBtn.addEventListener('click', () => {
 //tạo nút tắt mở toggle
 const toggleIcon = document.querySelector('.navbar-toggle');
 const navbarMenu = document.querySelector('.navbar-menu');
-const navClose = document.querySelector('.nav-close');
+const navLinks = document.querySelectorAll('.close-menu a');
+const nav_barMenu = document.querySelector('#myBgMenu');
+
+
 
 toggleIcon.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
 });
-navClose.addEventListener('click', () => {
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
     navbarMenu.classList.toggle('active');
+  });
 });
 
-// const toggleBtn = document.querySelector('.navbar-toggle');
-// const navMenu = document.querySelector('nav ul');
 
-// toggleBtn.addEventListener('click', () => {
-//     navMenu.classList.toggle('show');
-//     document.querySelectorAll('.menu-white').forEach(item => {
-//         item.classList.toggle('white-bg');
-//     });
-// });
+
+// Lặp qua từng mục và đăng ký sự kiện click
+
+
+
+
 
 
 
