@@ -8,7 +8,7 @@ alertMessage.style.display = 'block';
 alertMessage.textContent = 'Cảm ơn bạn đã liên hệ cho tôi!';
 
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-.then(response => console.log('Success!', response))
+.then(response => alert('Gửi Thành Công!', response))
 .catch(error => console.error('Error!', error.message))
 
 form.reset();
