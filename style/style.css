@@ -11,7 +11,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 #myHeader:hover {
-	background-color: var(--my-color);
+	background-color: rgba(38, 25, 53, 0.5);
 }
 #myHeader {
 	position: fixed;
